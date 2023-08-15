@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 300vh;
+}
+.prop video{
+    position: absolute;
+    display:  flex;
+    width: 98.5vw;
+    
+   
+}
+
+.menu ul{
+    text-align: center;
+    list-style: none;
+    position: absolute;
+    top: 4%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+}
+.menu ul li{
+  display: inline-block;
+  list-style-type: none;
+  border-right: 1px solid black;
+
+  padding: 2% 4%;
+}
+.menu ul li a{
+    font-size: 1vw;
+     color: black;
+      text-decoration: none;
+      transition: 0.4s;
+      font-family: 'Kanit', sans-serif;
+      
+}
+.menu a:hover{
+    color: white;
+}
+
+
+.logo img{
+    width: 70vw;
+    top: 10%;
+    left: 15%;
+position: absolute;
+}
