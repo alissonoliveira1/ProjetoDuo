@@ -1,16 +1,160 @@
-html body{
-    margin: 0;
-    padding: 0;
-    height: 300vh;
+*{
+ margin: 0;
+  padding: 0; 
 }
-.prop{
+
+html{
+  
+  height: 300vh;
+}
+.prop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.prop video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.logo {
+  top: -15vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  z-index: 3;
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.barra {
+  justify-content: center;
+  position: absolute;
+  top: 50vw;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background-color: rgb(59, 131, 127);
+  z-index: 1;
+  align-items: center;
+}
+
+.titulo-1 {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  position: absolute;
+  font-size: 1.5vw;
+  top: 54vw;
+  z-index: 3;
+}
+.texto-1 {
+  text-align: center;
+  font-size: 1.4vw;
+  top: 65vw;
+  color: white;
+  position: absolute;
+  z-index: 7;
+}
+.fotos-juntas {
+  margin-left: 1%;
+  top: 170%;
+  position: absolute;
+  display: inline-block;
+  z-index: 3;
+}
+.fotos-juntas img {
+  width: 24vw;
+}
+
+.bnt-chat {
+  top: 87%;
+  left: 78%;
+  position: fixed;
+  z-index: 4;
+}
+
+.bnt-chat button {
+  font-family: "Staatliches", cursive;
+  font-size: 1.5vw;
+  color: white;
+  border-radius: 10px;
+  background-color: black;
+  width: 20vw;
+  height: 4vw;
+  cursor: pointer;
+}
+
+
+
+nav{
+  display: flex;
+ margin-left: 10%;
+  margin-top: 20px;
+  height: 8vh;
+     z-index: 20;
+}
+.nav-list a:hover {
+  color: rgb(154, 154, 154);
+}
+
+.nav-list{
+  z-index: 20;
+  list-style: none;
+  display: flex;
+}
+a{
+  z-index: 10;
+  transition: 0.3s;
+  font-family: "Kanit", sans-serif;
+  font-size: 1.5vw;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.nav-list li{
+  
+  list-style-type: none;
+  border-right: 1px solid black;
+  padding: 2% 20%;
+  letter-spacing: 3px;
+  
+
+}
+.menu-mobile{
+    display: none;
+    cursor: pointer;
+}
+.menu-mobile div{
+
+width: 32px;
+height: 2px;
+background: #000000;
+margin: 8px;
+}
+
+@media (max-width:1000px) {
+  .prop {
     position: fixed;
     top: 0;
     left: 0;
-    overflow: hidden;width: 100%;
+    overflow: hidden;
+    width: 100%;
     height: 100%;
-}
-.prop video{
+  }
+  .prop video {
     position: absolute;
     top: 0;
     left: 0;
@@ -18,72 +162,72 @@ html body{
     height: 100%;
     object-fit: cover;
     z-index: -1;
-}
-.logo img{
-    width: 70vw;
-    height: 70vw;
-    top: -15%;
-    left: 15%;
-    position: absolute;
-    
-}
-.container{
+  }
+  
+  .logo {
+    top: -15vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    z-index: 3;
+  
+  }
+  
+  .container {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.barra {
+  }
+  .barra {
     justify-content: center;
     position: absolute;
-    top: 50vw;
+    top: 70vw;
     left: 0;
     width: 100%;
     height: 200%;
     background-color: rgb(59, 131, 127);
     z-index: 1;
     align-items: center;
-   
-  } 
-
-  .titulo-1{
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    position: absolute;
-    font-size: 1.5vw;
-    top: 54vw;
-    z-index: 3;
+  }
   
-   
-}
-.texto-1{
-    text-align: center;
-    font-size: 1.4vw;
-    top: 65vw;
+  .titulo-1 {
+    font-family: "Raleway", sans-serif;
     color: white;
     position: absolute;
+    font-size: 2.5vw;
+    top: 75vw;
     z-index: 3;
-}
-.fotos-juntas{
+  }
+  .texto-1 {
+    text-align: center;
+    font-size: 2.4vw;
+    top: 85vw;
+    color: white;
+    position: absolute;
+    z-index: 7;
+  }
+  .fotos-juntas {
     margin-left: 1%;
     top: 170%;
     position: absolute;
     display: inline-block;
     z-index: 3;
-}
-.fotos-juntas img{
-   width:24vw ;
-}
-
- .bnt-chat{
+  }
+  .fotos-juntas img {
+    width: 24vw;
+  }
+  
+  .bnt-chat {
     top: 87%;
     left: 78%;
     position: fixed;
     z-index: 4;
- }
-
-.bnt-chat button{
+  }
   
-    font-family: 'Staatliches', cursive;
+  .bnt-chat button {
+    font-family: "Staatliches", cursive;
     font-size: 1.5vw;
     color: white;
     border-radius: 10px;
@@ -91,96 +235,366 @@ html body{
     width: 20vw;
     height: 4vw;
     cursor: pointer;
-}
-
-
-.menu ul{
-    text-align: center;
+  }
+  
+  
+  
+  nav{
+    display: flex;
+   margin-left: 0%;
+    margin-top: 20px;
+    height: 8vh;
+       z-index: 20;
+  }
+  .nav-list a:hover {
+    color: rgb(154, 154, 154);
+  }
+  
+  .nav-list{
+    z-index: 20;
     list-style: none;
-    position: absolute;
-    top: 4%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    display: flex;
+  }
+  a{
+    z-index: 10;
+    transition: 0.3s;
+    font-family: "Kanit", sans-serif;
+    font-size: 2.5vw;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  .nav-list li{
     
+    list-style-type: none;
+    border-right: 1px solid black;
+    padding: 2% 13%;
+    letter-spacing: 3px;
+    
+  
+  }
+  .menu-mobile{
+      display: none;
+      cursor: pointer;
+  }
+  .menu-mobile div{
+  
+  width: 32px;
+  height: 2px;
+  background: #000000;
+  margin: 8px;
+  }
+  
 }
-.menu ul li{
-  display: inline-block;
-  list-style-type: none;
-  border-right: 1px solid black;
 
-  padding: 2% 4%;
-}
-.menu ul li a{
-    font-size: 1.2vw;
-     color: black;
-      text-decoration: none;
-      transition: 0.4s;
-      font-family: 'Kanit', sans-serif;
+
+
+@media (max-width:780px) {
+  html{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+    a{
+      font-size: 2.5vw;
+      z-index: 60;
       
-}
-.menu ul li .home{
-    transition: 0.4s;
-    color: rgb(35, 77, 77);
-}
-.menu a:hover{
-    color: rgb(154, 154, 154);
-}
-.menu ul li .home:hover{
-    color: rgb(154, 154, 154);
-}
-@media (max-width:480px) {
-    .menu ul li a{
-        font-size: 2vw;
+    }
+
+    
+    .nav-list{
+        position: absolute;
+        top: 12%;
+        right: 0;
+        width: 50vw;
+        height: 50vh;
+        background-color: rgb(46, 100, 98);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: 0.3s ease-in;
+        z-index: 20;
+        list-style: none;
+        display: flex;
+        border-radius: 20px;
+    }
+    .nav-list li{
+      border-right: 0 solid black;
+       margin-left: 0;
+       opacity: 0;
+      z-index: 10;
+    }
+    .menu-mobile{
+      position: absolute;
+        display: block;
+        z-index: 10;
+       
+    }
+    .nav-list.active{
+        transform: translateX(0);
+    }
+    nav{
+        margin-left: 80%;
+        z-index: 3;
+    
     }
     .logo img{
-        width: 70vw;
-        height: 70vw;
-        top: 5%;
-        left: 15%;
-        position: absolute;
-        
+      width: 70vw;
     }
-    .titulo-1{
-        font-family: 'Raleway', sans-serif;
-        color: white;
-        position: absolute;
-        font-size: 1.5vw;
-        top: 85vw;
-        z-index: 3;
+
+    .logo {
+      left: 13%;
+      margin-top: 25vw; /* Ajuste na margem superior para telas menores */
+      position: absolute;
+      display: flex;
+      z-index: 3;
       
-       
-    }
-    .texto-1{
-        text-align: center;
-        font-size: 1.4vw;
-        top: 95vw;
-        color: white;
-        position: absolute;
-        z-index: 3;
-    }
-
-
-
-
-    .fotos-juntas{
-        margin-left: 1%;
-        top: 50%;
-        position: absolute;
-        display: inline-block;
-        z-index: 3;
     }
     .barra {
-        justify-content: center;
-        position: absolute;
-        top: 80vw;
-        left: 0;
-        width: 100%;
-        height: 200%;
-        background-color: rgb(59, 131, 127);
-        z-index: 1;
-        align-items: center;
-       
-      } 
+      top: 150vw; /* Ajuste na posição para telas menores */
+    }
+
+}
+
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}  
+
+
+@media (max-width: 480px) {
+  html{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+    a {
+      font-size: 4vw;
+      z-index: 60;
+    }
+  
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 70vw; /* Aumentei um pouco a largura para telas menores */
+      height: 50vh;
+      background-color: rgb(105, 209, 200);
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: 0.3s ease-in;
+      z-index: 20;
+      list-style: none;
+      display: flex;
+      border-radius: 20px;
+    }
+  
+    .nav-list.active {
+      transform: translateX(0);
+    }
+  
+    .nav-list li {
+      border-right: 0 solid black;
+      margin-left: 0;
+      opacity: 0;
+      z-index: 10;
+      animation: navLinkFade 0.5s ease forwards;
+    }
+  
+    .menu-mobile {
+      top: 1vh;
+      position: absolute;
+      display: block;
+    }
+  
+    .prop {
+      position: relative;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .prop video {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .logo {
+      left: 19.5%;
+      margin-top: -40vw; /* Ajuste na margem superior para telas menores */
+      position: absolute;
+      display: flex;
+      z-index: 3;
+      
+    }
+    .logo img{
+      width: 60vw;
+    }
+  
+    .titulo-1 {
+      font-size: 2.5vw; /* Ajuste no tamanho da fonte para telas menores */
+      top: 60vw; /* Ajuste na posição para telas menores */
+    }
+  
+    .texto-1 {
+      font-size: 2.4vw; /* Ajuste no tamanho da fonte para telas menores */
+      top: 70vw; /* Ajuste na posição para telas menores */
+    }
+  
+    .fotos-juntas img {
+      width: 22vw; /* Ajuste no tamanho da imagem para telas menores */
+    }
+    .fotos-juntas{
+      top: 50%;
+      left: 3%;
+    }
+  
+    .barra {
+      top: 56vw; /* Ajuste na posição para telas menores */
+    }
+
+  
+    .bnt-chat button {
+      font-size: 2vw; /* Ajuste no tamanho da fonte para telas menores */
+      width: 20vw; /* Ajuste na largura do botão para telas menores */
+      height: 7vw; /* Ajuste na altura do botão para telas menores */
+    }
+  }
+  
+
+
+
+
+  
+@media (max-width: 425px) {
+   html{
+    padding: 0;
+    margin: 0;
+  }
+  a{
+    font-size: 4vw;
+    z-index: 60;
+    
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 70vw; /* Aumentei um pouco a largura para telas menores */
+    height: 50vh;
+    background-color: rgb(105, 209, 200);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: 0.3s ease-in;
+    z-index: 20;
+    list-style: none;
+    display: flex;
+    border-radius: 20px;
+  }
+
+  .nav-list.active {
+    transform: translateX(0);
+  }
+
+  .nav-list li {
+    border-right: 0 solid black;
+    margin-left: 0;
+    opacity: 0;
+    z-index: 10;
+    animation: navLinkFade 0.5s ease forwards;
+  }
+
+  .menu-mobile {
+    top: 1vh;
+    position: absolute;
+    display: block;
+  }
+
+
+  .prop video {
+    
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    z-index: -1;
+  }
+ 
+  .logo {
+    display: flex;
+    left: 12%;
+    margin-top: 80px;/* Ajuste na margem superior para telas menores */
+    z-index: 50;
+    position: absolute;
+    z-index: 8;
+  
+
+  }
+  .logo img{
+     width: 70vw;
+  }
+
+  .titulo-1 {
+    font-size: 2.6vw; /* Ajuste no tamanho da fonte para telas menores */
+    top: 60vw; /* Ajuste na posição para telas menores */
+  }
+
+  .texto-1 {
+    font-size: 2.5vw; /* Ajuste no tamanho da fonte para telas menores */
+    top: 70vw; /* Ajuste na posição para telas menores */
+  }
+ .fotos-juntas{
+  left: 15px;
+  top: 90vw;
+ }
+  .fotos-juntas img {
+    width: 22vw; /* Ajuste no tamanho da imagem para telas menores */
+  }
+
+  .barra {
+    top: 56vw; /* Ajuste na posição para telas menores */
+  }
+
+  .bnt-chat button {
+    font-size: 2vw; /* Ajuste no tamanho da fonte para telas menores */
+    width: 20vw; /* Ajuste na largura do botão para telas menores */
+    height: 7vw; /* Ajuste na altura do botão para telas menores */
+  }
 }
